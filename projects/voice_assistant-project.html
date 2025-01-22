@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> GPT-based Inclusive Voice Assistant for Luganda and English Speakers</title>
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="icon" href="assets/images/voice_assistant_system.jpg" type="image/x-icon" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../assets/styles.css" />
+    </head>
+
+    <body>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">AMWINE NICKSON</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Main Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://bit.ly/4avixvi"
+                                class="btn btn-info"
+                                target="_blank"
+                                rel="noopener"
+                                >Project Demo</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-light mt-5">
+            <h1 class="text-center mb-5">GPT-based Voice Assistant for Luganda and English Speakers</h1>
+            <h2 class="text-warning">Project Summary</h2>
+            <p class="lead text-light">
+                I Led the design and implementation of a GPT-based inclusive 
+                voice assistant for Luganda and English speakers. A standalone system 
+                aimed at enhancing information accessibility for individuals with limited 
+                text input capabilities in low-resource language communities of Uganda. 
+            </p>
+
+            <h2 class="text-warning">Objective</h2>
+            <p class="lead text-light">
+                The primary objective was to develop a standalone voice-operated ChatGPT-based assistant system that 
+                supports both Luganda and English languages for individuals especially those with limited text input and output capabilities, 
+                enhancing their ability to access information and supporting them to accomplish their specific tasks 
+                independently in their preferred language.
+            </p>
+
+            <h2 class="text-warning">System Components</h2>
+            <p class="lead text-light">
+                The system integrates both hardware and software components, utilizing a Raspberry Pi as the core hardware platform for 
+                processing user inputs and controlling other attached components such as the microphone, speakers etc.
+            </p>
+
+            <h3 class="text-primary">Hardware</h3>
+            <p class="lead text-light">
+                At the core of the system is a Raspberry Pi 3B+, which was integrated with APIs to handle user inputs and return feedback seemlessly. 
+                The system also incoporates a digital microphone for voice input and speakers for speech output.
+            </p>
+            <p class="text-center">
+                <img
+                    src="../assets/images/project_schematic_image.png"
+                    alt="Prototype layout"
+                    class="project-img mb-4 rounded-5 img-fluid mb-3"
+                />
+                <img
+                    src="../assets/images/system.jpeg"
+                    alt="Hardware components"
+                    class="project-img mb-4 rounded-5 img-fluid mb-3"
+                />
+            </p>
+
+            <h3 class="text-primary">Machine Learning</h3>
+            <p class="lead text-light">
+                The system utilizes a combination of powerful AI models accessed through their respective APIs. 
+                The models integrated include Sunbird AI to perform Luganda STT, Whisper AI for English STT and TTS,
+                Google translate for Luganda translation, and GPT for response generation.
+                A custom TTS model was also trained and deployed to handle Luganda speech generation i.e. Luganda TTS.
+            </p>
+            
+            <h3 class="text-primary">Feedback System</h3>
+            <p class="lead text-light">
+                Different colored LEDs were implemented to provide real-time feedback about the system’s  status, 
+                making the system adaptable and user-friendly.
+                The system can be activated using wake words while in sleep mode, allowing users to start
+                interactions hands-free. The wake words for our system are "Myra Luganda" for system
+                activation in Luganda and "Myra English" for English activation in English which makes it a
+                passive listening device
+            </p>
+
+            <h3 class="text-primary">System Operation</h3>
+            <p class="text-center">
+                <img
+                    src="../assets/images/system_flow.png"
+                    alt="prototype"
+                    class="project-img mb-4 rounded-5 img-fluid mb-3"
+                />
+            </p>
+            <h2 class="text-center my-5 text-warning">Meet the Team</h2>
+
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img
+                        src="../assets/images/nickson.jpg"
+                        alt="Team Member Nickson"
+                        class="rounded-5 mb-3 profile-lug img-fluid"
+                    />
+                    <h4>Amwine Nickson</h4>
+                    <p class="lead text-light">Partner</p>
+                </div>
+                <div class="col-md-6">
+                    <img
+                        src="../assets/images/racheal.jpg"
+                        alt="Team Member Racheal"
+                        class="rounded-5 mb-3 profile-lug img-fluid"
+                    />
+                    <h4>Ndagire Racheal</h4>
+                    <p class="lead text-light">Partner</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-2">
+            <p>&copy; 2025 Amwine Nickson</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
